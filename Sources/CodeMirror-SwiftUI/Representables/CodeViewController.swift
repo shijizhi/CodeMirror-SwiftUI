@@ -117,10 +117,10 @@ extension CodeViewController: WKNavigationDelegate {
     if message.name == CodeViewRPC.textContentDidChange {
       let content = (message.body as? String) ?? ""
       
-      if content != parent.code {
+//      if content != parent.code {
         parent.onContentChange?(content)
 //        parent.code = content
-      }
+//      }
       return
     }
   }
