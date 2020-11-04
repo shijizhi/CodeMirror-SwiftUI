@@ -119,7 +119,7 @@ extension CodeViewController: WKNavigationDelegate {
       
       if content != parent.code {
         parent.onContentChange?(content)
-        parent.code = content
+//        parent.code = content
       }
       return
     }
